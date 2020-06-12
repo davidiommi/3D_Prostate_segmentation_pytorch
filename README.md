@@ -1,4 +1,4 @@
-# 3D-Unet: patched based Pytorch implementation for prostate T2w segmentation
+# 3D-Unet: patched based Pytorch implementation for prostate T2w segmentation (weights available)
 
 The training and the inference are patch based: the script randomly extract corresponding patches of the images and labels and feed them to the network during training.
 The inference script resample the iamge, extract, segment the sigle patches and automatically recontruct them in the original resolution. 
