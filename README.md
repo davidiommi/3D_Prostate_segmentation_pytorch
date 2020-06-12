@@ -19,7 +19,7 @@ it for your test case.
 
 Sample MR images from the sagittal view:
 
-![MR3](images/3.JPG)![MR4](images/4.JPG)![MR1](images/1.JPG)![MR2](images/2.JPG)
+![MR1](images/1.JPG)![MR2](images/2.JPG)
 *******************************************************************************
 
 ### Requirements
