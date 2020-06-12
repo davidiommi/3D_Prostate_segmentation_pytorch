@@ -3,10 +3,13 @@
 The training and the inference are patch based: the script randomly extract corresponding patches of the images and labels and feed them to the network during training.
 The inference script resample the iamge, extract, segment the sigle patches and automatically recontruct them in the original resolution. 
 *******************************************************************************
+### Data
 The training and testing was performed on the public available dataset of the PROMISE12 challenge (https://promise12.grand-challenge.org/).
 *******************************************************************************
+### Pre-trained-model
 The weights are available and you can download them from the following link: https://drive.google.com/file/d/1-Cz1Xg0Uoku49pIIpnT7TYXztWi_YrBy/view?usp=sharing
-
+*******************************************************************************
+### Attention!!!
 If you want to segment an image from a 1.5T system + coil, we strongly recommend to apply firt a N4 bias correction filter (https://www.slicer.org/wiki/Documentation/4.10/Modules/N4ITKBiasFieldCorrection)
 and windowing the image  before the inference, otherwise the segmentatio will not work. If you do not want to use Slicer there is a snippet code from adjust_mr_contrast.py for the N4 filter. Please modify
 it for your test case.
