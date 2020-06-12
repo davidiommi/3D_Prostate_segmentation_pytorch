@@ -24,19 +24,7 @@ Sample MR images from the sagittal view:
 *******************************************************************************
 
 ### Requirements
-pillow
-scikit-learn
-simpleITK
-keras
-scikit-image
-pandas
-pydicom
-nibabel
-tqdm
-torch>=0.4.1
-torchvision>=0.2.1
-dominate>=2.3.1
-visdom>=0.1.8.
+See requirements.txt list
 
 ### Python scripts and their function
 
@@ -64,26 +52,26 @@ Folder Structure:
 	.
 	├── Data_folder                   
 	|   ├── train_set              
-	|   |   ├── data_1             # Training
-	|   |   |   ├── A              # Contains domain A images 
-	|   |   |   └── B              # Contains domain B labels 
-	|   |   └── data_2             
-	|   |   |   ├── A              
-	|   |   |   └── B              
+	|   |   ├── patient_1             # Training
+	|   |   |   ├── image.nii              
+	|   |   |   └── label.nii                     
+	|   |   └── patient_2             
+	|   |   |   ├── image.nii              
+	|   |   |   └── label.nii              
 	|   ├── test_set               
-	|   |   ├── data_1             # Testing
-	|   |   |   ├── A              
-	|   |   |   └── B              
-	|   |   └── data_2             
-	|   |   |   ├── A              
-	|   |   |   └── B              
+	|   |   ├── patient_3             # Testing
+	|   |   |   ├── image.nii              
+	|   |   |   └── label.nii              
+	|   |   └── patient_4             
+	|   |   |   ├── image.nii              
+	|   |   |   └── label.nii              
 	|   ├── validation_set               
-	|   |   ├── data_1             # Validation
-	|   |   |   ├── A             
-	|   |   |   └── B              
-	|   |   └── data_2             
-	|   |   |   ├── A              
-	|   |   |   └── B              
+	|   |   ├── patient_5            # Validation
+	|   |   |   ├── image.nii             
+	|   |   |   └── label.nii              
+	|   |   └── patient_6             
+	|   |   |   ├── image.nii              
+	|   |   |   └── label.nii              
 
 ## Features
 - 3D data processing ready
