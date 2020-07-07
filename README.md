@@ -46,8 +46,11 @@ See requirements.txt list
 - predict_single_image.py: It launches the inference on a single input image chosen by the user.
 
 ## Usage
+
+Use first organize_folder_structure.py to create organize the data in the following folder structure.
 Modify the init.py to set the parameters and start the training/testing on the data:
 Folder Structure:
+
 
 	.
 	├── Data_folder                   
