@@ -1,4 +1,4 @@
-# 3D-Unet: patched based Pytorch implementation for prostate T2w segmentation (weights available)
+# 3D-Unet patched based Pytorch implementation for prostate T2w segmentation (weights available)
 
 The training and the inference are patch based: the script randomly extract corresponding patches of the images and labels and feed them to the network during training.
 The inference script resample the iamge, extract, segment the sigle patches and automatically recontruct them in the original resolution. 
@@ -46,8 +46,11 @@ See requirements.txt list
 - predict_single_image.py: It launches the inference on a single input image chosen by the user.
 
 ## Usage
+
+Use first organize_folder_structure.py to create organize the data in the following folder structure.
 Modify the init.py to set the parameters and start the training/testing on the data:
 Folder Structure:
+
 
 	.
 	├── Data_folder                   
